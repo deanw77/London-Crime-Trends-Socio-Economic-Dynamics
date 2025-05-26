@@ -9,6 +9,7 @@ It provides a analysis looking for correlation between types of crime and averag
 ## Badges
 
 **Languages & Frameworks:**
+
 ![CSS3](https://img.shields.io/badge/sql-%231572B6.svg?style=for-the-badge&logo=sql&logoColor=white)
 ![CSS3](https://img.shields.io/badge/python-%231572B6.svg?style=for-the-badge&logo=python&logoColor=white)
 
