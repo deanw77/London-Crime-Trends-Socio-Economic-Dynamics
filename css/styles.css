@@ -16,12 +16,36 @@ header {
   color: whitesmoke;
   text-align: center;
   padding: 10px;
-  margin-bottom: 20px;
+}
+
+.hero {
+  background-image: url("../images/tower-bridge.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 section {
   margin-bottom: 20px;
 }
+
+.summary {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 50%;
+  text-align: center;
+}
+
+.summary h2 {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
 footer {
   background-color: black;
   color: whitesmoke;
