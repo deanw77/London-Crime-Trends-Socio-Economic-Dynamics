@@ -1,0 +1,41 @@
+SELECT 
+  *
+  ,CASE
+    WHEN outcode IN ("W5", "W13", "UB1", "UB2", "UB5") THEN "Ealing"
+    WHEN outcode IN ("SE10", "SE3", "SE7", "SE9", "SE18", "SE28") THEN "Greenwich"
+    WHEN outcode IN ("W6", "SW6", "W12", "W14") THEN "Hammersmith and Fulham"
+    WHEN outcode IN ("N4", "N8", "N10", "N15", "N17", "N22") THEN "Haringey"
+    WHEN outcode IN ("KT1", "KT2", "KT3", "KT4", "KT5", "KT6", "KT9") THEN "Kingston upon Thames"
+    WHEN outcode IN ("SE1", "SE5", "SE11", "SE19", "SE21", "SE24", "SW2", "SW4", "SW8", "SW9", "SW12", "SW16") THEN "Lambeth"
+    WHEN outcode IN ("E6", "E7", "E12", "E13", "E15", "E16") THEN "Newham"
+    WHEN outcode IN ("TW1", "TW2", "TW9", "TW10", "TW11", "TW12") THEN "Richmond upon Thames"
+    WHEN outcode IN ("SE1", "SE5", "SE15", "SE16", "SE17", "SE21", "SE22", "SE24") THEN "Southwark"
+    WHEN outcode IN ("E1", "E2", "E3", "E14") THEN "Tower Hamlets"
+    WHEN outcode IN ("SW4", "SW8", "SW11", "SW12", "SW15", "SW17", "SW18", "SW19") THEN "Wandsworth"
+    WHEN outcode IN ("W1", "W2", "SW1", "WC2") THEN "Westminster"
+    WHEN outcode IN ("IG11", "RM8", "RM9", "RM10") THEN "Barking and Dagenham"
+    WHEN outcode IN ("EN4", "EN5", "N2", "N3", "N11", "N12", "NW2", "NW4", "NW7", "NW9", "NW11") THEN "Barnet"
+    WHEN outcode IN ("WC1", "WC2", "NW1", "NW3", "NW5", "NW6") THEN "Camden"
+    WHEN outcode IN ("CR0", "CR2", "CR4", "CR5", "CR6", "CR7", "SE25") THEN "Croydon"
+    WHEN outcode IN ("EN1", "EN2", "EN3", "EN4", "EN8", "N9", "N13", "N14", "N18", "N21") THEN "Enfield"
+    WHEN outcode IN ("HA0", "HA1", "HA2", "HA3", "HA5", "HA7", "HA8") THEN "Harrow"
+    WHEN outcode IN ("UB3", "UB4", "UB7", "UB8", "UB10") THEN "Hillingdon"
+    WHEN outcode IN ("EC1", "EC2", "EC3", "EC4", "N1", "N5", "N7", "N19") THEN "Islington"
+    WHEN outcode IN ("SW1", "SW3", "SW5", "SW7", "W8", "W10", "W11", "W14") THEN "Kensington and Chelsea"
+    WHEN outcode IN ("SM1", "SM2", "SM3", "SM5", "SM6", "SM7") THEN "Sutton"
+    WHEN outcode IN ("DA5", "DA6", "DA7", "DA8", "DA14", "DA15", "DA16", "SE2", "SE9", "SE18", "SE28") THEN "Bexley"
+    WHEN outcode IN ("NW2", "NW6", "NW9", "NW10") THEN "Brent"
+    WHEN outcode IN ("BR1", "BR2", "BR3", "BR4", "BR5", "BR6", "BR7", "B") THEN "Bromley"
+    WHEN outcode IN ("E5", "E8", "E9", "N1", "N16") THEN "Hackney"
+    WHEN outcode IN ("RM1", "RM2", "RM3", "RM4", "RM5", "RM6", "RM7", "RM11", "RM12", "RM13", "RM14") THEN "Havering"
+    WHEN outcode IN ("SE3", "SE4", "SE6", "SE8", "SE12", "SE13", "SE14", "SE23", "SE26") THEN "Lewisham"
+    WHEN outcode IN ("SW19", "SW20", "CR4") THEN "Merton"
+    WHEN outcode IN ("IG1", "IG2", "IG3", "IG4", "IG5", "IG6", "IG7", "IG8", "IG9") THEN "Redbridge"
+    WHEN outcode IN ("E4", "E10", "E11", "E17") THEN "Waltham Forest"
+    WHEN outcode IN ("TW3", "TW4", "TW5", "TW7", "TW8", "TW13", "TW14") THEN "Hounslow"
+    WHEN outcode IN ("TW6", "E16") THEN "London Heathrow"
+    ELSE "Unknown"
+  END AS `Borough_Name`
+FROM 
+  `london-crime-trend.Cleaned_Data.House_location_price_date`
+;
