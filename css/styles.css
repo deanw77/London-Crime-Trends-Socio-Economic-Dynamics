@@ -3,8 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
-  background-color: rgb(43, 43, 43);
   color: whitesmoke;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  background-color: black;
 }
 
 .container {
@@ -17,7 +22,7 @@ header {
   background-color: black;
   color: whitesmoke;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 .hero {
@@ -31,12 +36,17 @@ header {
   color: white;
 }
 
+.body {
+  background-color: Black !important;
+  padding: 20px;
+}
+
 section {
   margin-bottom: 20px;
+  background-color: black;
 }
 
 .summary {
-  background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 20px;
   max-width: 50%;
@@ -45,7 +55,10 @@ section {
 
 .summary h2 {
   color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 2rem;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 footer {
