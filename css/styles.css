@@ -4,11 +4,6 @@
   box-sizing: border-box;
   list-style-type: none;
   color: whitesmoke;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-family: Arial, sans-serif;
   background-color: black;
 }
 
@@ -19,8 +14,6 @@ html {
 }
 
 header {
-  background-color: black;
-  color: whitesmoke;
   text-align: center;
   padding: 20px;
 }
@@ -33,17 +26,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-}
-
-.body {
-  background-color: Black !important;
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 20px;
-  background-color: black;
 }
 
 .summary {
@@ -51,24 +33,31 @@ section {
   border-radius: 20px;
   max-width: 50%;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .summary h2 {
   color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0) !important;
   font-size: 2rem;
   padding: 40px;
   border-radius: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 8px;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: -35px;
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(70, 70, 70) !important;
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
@@ -82,22 +71,39 @@ section {
   position: relative;
   transition: transform 1500ms ease;
   transform-style: preserve-3d;
+  cursor: pointer;
 }
 
 .card:hover {
-  cursor: pointer;
   transform: rotateY(180deg);
+}
+
+.card_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: rgb(70, 70, 70) !important;
 }
 
 .card_front {
   position: absolute;
   backface-visibility: hidden;
+  background-color: rgb(70, 70, 70) !important;
+}
+
+.card_front .card_title {
+  background-color: rgb(70, 70, 70) !important;
 }
 
 .card_back {
   position: absolute;
   backface-visibility: hidden;
+  background-color: rgb(70, 70, 70) !important;
   transform: rotateY(180deg);
+}
+
+.card_back p {
+  background-color: rgb(70, 70, 70) !important;
 }
 
 button {
@@ -108,6 +114,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
+  margin-top: 12px;
 }
 
 footer {

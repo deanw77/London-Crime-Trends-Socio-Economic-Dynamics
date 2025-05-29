@@ -8,21 +8,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
         content="An analysis of crime rates and socio-economic factors in London and the relationships between crime rates, house prices and unemployment rates.">
+
     <title>London Crime Trends</title>
 
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
+    <!-- Header Section, Just containing the Title of the Page -->
     <header>
         <div class="container">
             <h1>London Crime Trends & Socio-Economic Dynamics</h1>
         </div>
     </header>
 
+    <!-- Main Content of the Page -->
     <main>
+        <!-- Hero Section, background image of London with some brief summary text -->
         <section class="hero">
+            <!-- This summary will be centered using flexbox properties -->
             <div class="summary">
                 <h2>An analysis of crime rates and socio-economic factors in London and the relationships between crime
                     rates, house prices and unemployments rates</h2>
@@ -30,9 +34,12 @@
             </div>
         </section>
 
+        <!-- Container to enable styling a larger and smaller screens -->
         <div class="container">
 
-            <section class="">
+            <!-- Dean ----------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- First Section Looking at the overall Crime Over the London Boroughs -->
+            <section>
                 <br />
                 <h2 class="SubTitle">London Crime Trends</h2>
                 <br />
@@ -48,21 +55,17 @@
                 </p>
             </section>
 
+            <!-- Embed the first Dashboard from Looker Studio -->
             <section>
-                <div class="plot">
-
-                </div>
-
-            </section>
-            <section class="">
-                <iframe width="100%" height="650px"
+                <iframe width="100%" height="700px"
                     src="https://lookerstudio.google.com/embed/reporting/9f748cb8-cf2e-48a6-90b9-040276cd5c5c/page/vn3LF"
                     frameborder="0" style="border:0" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
             </section>
+
             <section class="cards">
                 <div class="card">
-                    <div class="card_front">2012</div>
+                    <div class="card_front"><span class="card_title">2012</span></div>
                     <div class="card_back">
                         <p>In August 2011, London experienced a significant crime spike and widespread civil unrest,
                             including riots that involved looting, arson, and violence. The unrest was triggered by the
@@ -72,21 +75,42 @@
                             In the affected areas, crime rose by 57% during August. </p>
                         <a href="https://res.org.uk/mediabriefing/harsher-sentences-after-london-riots-led-to-fall-in-crime/"
                             target="blank">
-                            <button>Read
-                                More</button></a>
+                            <button>Read More</button>
+                        </a>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card_front">2019</div>
-                    <div class="card_back">Data</div>
+                    <div class="card_front"><span class="card_title">2019</span></div>
+                    <div class="card_back">
+                        <p>In 2019, police-recorded vehicle offences in London increased, continuing a trend seen over
+                            the previous three years. While the increase was lower than in previous years, it is
+                            believed that this reflects genuine increases in vehicle crime rather than just improved
+                            recording practices. Specifically, the subcategory "theft or unauthorized taking of a motor
+                            vehicle" saw an 8% increase, while "theft from a vehicle" increased by 1%</p>
+                        <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingmarch2019"
+                            target="blank">
+                            <button>Read More</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="card">
-                    <div class="card_front">Theft Drop</div>
-                    <div class="card_back">Data</div>
+                    <div class="card_front"><span class="card_title">Theft Drop</span></div>
+                    <div class="card_back">
+                        <p>Phone technology, including features like activation lock, theft detection lock, and remote
+                            tracking, is playing a role in reducing street theft by making stolen phones less desirable
+                            to thieves. These features, especially when used in conjunction with proactive measures like
+                            setting up strong passwords and using security apps, can help deter theft and aid in the
+                            recovery of stolen devices</p>
+                        <a href="https://www.cityoflondon.police.uk/news/city-of-london/news/2025/may/city-of-london-police-tactics-preventing-phone-theft/#:~:text=Proactive%20action%20by%20the%20City,compared%20with%20the%20previous%20year."
+                            target="blank">
+                            <button>Read More</button>
+                        </a>
+                    </div>
                 </div>
             </section>
+            <!-- Dean End ------------------------------------------------------------------------------------------------------------------------- -->
 
-            <section class="proximity-scroll-snapping">
+            <section>
                 <h2 class="SubTitle">Crime and Unemployment</h2>
                 <br />
                 <h3>Deep dive to how unemployment rates effect both the total crime and the types of crime.</h3>
