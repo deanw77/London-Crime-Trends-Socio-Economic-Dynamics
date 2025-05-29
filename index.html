@@ -5,17 +5,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="An analysis of crime rates and socio-economic factors in London and the relationships between crime rates, house prices and unemployment rates.">
     <title>London Crime Trends</title>
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
 </head>
 
 <body>
     <header>
         <div class="container">
             <h1>London Crime Trends & Socio-Economic Dynamics</h1>
-
         </div>
     </header>
 
@@ -29,29 +34,49 @@
         </section>
 
         <div class="container">
-            <section>
+
+            <section class="">
+                <br />
                 <h2 class="SubTitle">London Crime Trends</h2>
                 <br />
-                <h3>We first a brief look at the distribution of crime across the London Boroughs</h3>
+                <h3>We first take a brief look at the distribution of crime across the London Boroughs</h3>
                 <br />
                 <p>We can see that central London is a hotspot for crime. This largely due to much higher rates of theft
-                    in central London.
-                    In fact theft Accounts for over 50% of all crime in Central London. The next most common crime
-                    is violence against the person, which accounts for around 20% of all crime in Central London.
+                    in central London. In fact theft Accounts for over 50% of all crime in Central London. The next most
+                    common crime is violence against the person, which accounts for around 20% of all crime in Central
+                    London.
                 </p>
                 <br />
-                <p>If we filter by Burglary and Voilence we see a much more even distribution acfcross London Boroughs
+                <p>If we filter by Burglary and Violence we see a much more even distribution across the London Boroughs
                 </p>
             </section>
 
             <section>
+                <div class="plot">
+
+                </div>
+                <py-script output="plot">
+                    import matplotlib.pyplot as plt
+                    from script import make_x_and_y
+
+                    x, y = make_x_and_y(n=1000)
+
+                    fig, ax = plt.subplots()
+                    ax.scatter(x, y, color='blue', alpha=0.5)
+                    fig
+
+                </py-script>
+
+
+            </section>
+            <section class="">
                 <iframe width="100%" height="650px"
                     src="https://lookerstudio.google.com/embed/reporting/9f748cb8-cf2e-48a6-90b9-040276cd5c5c/page/vn3LF"
                     frameborder="0" style="border:0" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
             </section>
 
-            <section>
+            <section class="proximity-scroll-snapping">
                 <h2 class="SubTitle">Crime and Unemployment</h2>
                 <br />
                 <h3>Deep dive to how unemployment rates effect both the total crime and the types of crime.</h3>
@@ -65,14 +90,14 @@
                 </p>
             </section>
 
-            <section>
+            <section class="proximity-scroll-snapping">
                 <iframe width="100%" height="750px"
                     src="https://lookerstudio.google.com/embed/reporting/86dd3071-8f70-44dc-8688-3c709654688b/page/p_v2vt7ylvsd"
                     frameborder="0" style="border:0" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
             </section>
 
-            <section>
+            <section class="proximity-scroll-snapping">
                 <h2 class="SubTitle">Crime and House Prices</h2>
                 <br />
                 <h3>Do the more affluent areas have less crime or different crime trends?</h3>
@@ -84,14 +109,14 @@
                 </p>
             </section>
 
-            <section>
-                <iframe width="100%" height="650px"
-                    src="https://lookerstudio.google.com/embed/reporting/9f748cb8-cf2e-48a6-90b9-040276cd5c5c/page/vn3LF"
+            <section class="proximity-scroll-snapping">
+                <iframe width="100%" height="750px"
+                    src="https://lookerstudio.google.com/embed/reporting/e0a35740-620c-434b-a732-c529993fe936/page/XnDMF"
                     frameborder="0" style="border:0" allowfullscreen
                     sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
             </section>
 
-            <section>
+            <section class="proximity-scroll-snapping">
                 <h2>Data Sources</h2>
                 <p>The data used in this project is sourced from:</p>
                 <ul>
