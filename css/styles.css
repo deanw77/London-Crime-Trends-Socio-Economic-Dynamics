@@ -74,6 +74,20 @@ section {
   padding: 8px;
 }
 
+.SubTitle {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+section h3 {
+  font-size: 1.5rem;
+}
+section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
 iframe {
   overflow: hidden;
 }
@@ -94,7 +108,7 @@ iframe {
   display: flex;
   flex: 1;
   min-width: calc(33% - 20px);
-  height: 250px;
+  height: 200px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -102,6 +116,13 @@ iframe {
   transition: transform 1500ms ease;
   transform-style: preserve-3d;
   cursor: pointer;
+}
+
+.card_back p {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  padding: 4px;
+  margin-top: 10px;
 }
 
 .card:hover {
