@@ -92,6 +92,10 @@ iframe {
   overflow: hidden;
 }
 
+.looker_frame {
+  position: relative;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
