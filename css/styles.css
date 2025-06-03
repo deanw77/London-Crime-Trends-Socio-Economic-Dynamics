@@ -184,7 +184,7 @@ iframe {
 button {
   background-color: #ff8800;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -210,14 +210,12 @@ nav {
 
 .nav_button {
   margin: 6px;
-  padding: 8px 12px;
+  padding: 12px 12px;
   border: #ffeeda 1px solid;
   border-radius: 5px;
 }
 
 .nav_button:hover {
-  margin: 6px;
-  padding: 6px 12px;
   border: #1a2e3a 1px solid;
   background-color: #ffeeda;
   border-radius: 5px;
