@@ -4,7 +4,7 @@ This project takes in data from 2010 to 2025 related to crime statistics and hou
 
 It provides a analysis looking for correlation between types of crime and average house prices.
 
-## Deployed at [London-Crime-Trends-Socio-Economic-Dynamics](https://deanw77.github.io/London-Crime-Trends-Socio-Economic-Dynamics/)
+## Deployed at [London-Crime.uk](https://london-crime.uk/)
 
 ## Badges
 
